@@ -1,6 +1,6 @@
 <script>
 	import Modal from '../components/Modal.svelte';
-	export let showCoinflip = false;
+	import { showCoinFlip } from '$lib/stores/coin';
 
 	let coinState = 'heads';
 	let hasFlipped = false;
@@ -15,7 +15,7 @@
 	}
 </script>
 
-<Modal bind:showModal={showCoinflip}>
+<Modal bind:showModal={$showCoinFlip}>
 	<h2 slot="header" style="padding: 0; margin: 0;">
 		Coinflip
 	</h2>
