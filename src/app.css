@@ -64,6 +64,10 @@
 	font-family: "Courier New", Courier, monospace;
 }
 
+p {
+	font-size: 18px;
+}
+
 #sidebar {
 	position: fixed;
 	top: 0;
@@ -74,15 +78,18 @@
 }
 
 button.sidebar-item {
+	all: unset;
+	border-bottom: 1px solid var(--text);
+	border-left: 1px solid var(--text);
 	height: 25%;
 	display: grid;
-	border: 1px solid red;
 	justify-content: center;
 	align-content: center;
 	width: 100%;
 }
 
 button.sidebar-item:hover {
+	background-color: var(--accent);
 	cursor: pointer;
 }
 
